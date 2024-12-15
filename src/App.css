@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   border: 20px solid blueviolet;
@@ -6,7 +7,6 @@ body {
   background-color: white;
   box-sizing: border-box;
 }
-
 #canvas {
   height: calc(100vh - 40px);
   width: calc(100vw - 40px);
@@ -14,9 +14,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: JetBrains Mono, monospace;
+  font-family: "JetBrains Mono", monospace;
+  text-align: center;
+  user-select: none;
 }
-
 #ball {
   height: 44px;
   width: 44px;
@@ -26,12 +27,14 @@ body {
   background-image: url("./assets/tennis-ball.webp");
   background-size: 46px 46px;
 }
-
 #instructions {
   position: absolute;
-  color: #00000058;
+  top: 10px;
+  width: 100%;
   font-size: 24px;
-  text-align: center;
-  user-select: none;
-  line-height: 32px;
+  color: #00000058;
+  cursor: pointer;
 }
+
+
+
